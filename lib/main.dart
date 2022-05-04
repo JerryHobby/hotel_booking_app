@@ -9,7 +9,7 @@ import 'package:hotel_booking_app/screens/hotel_overview_screen.dart';
 import 'amadeus.dart';
 
 void main() async{
-  await dotenv.load();
+  await dotenv.load(fileName: "assets/.env");
   runApp(const MyApp());
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.purpleAccent,
